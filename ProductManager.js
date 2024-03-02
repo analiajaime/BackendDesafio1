@@ -1,5 +1,7 @@
 const fs = require('fs').promises;
 
+
+
 class ProductManager {
     constructor(filePath) {
         this.path = filePath;
@@ -77,6 +79,19 @@ class ProductManager {
     }
 }
 
-module.exports = ProductManager;
+
+// Crear una instancia de ProductManager
+const productManager = new ProductManager('./products.json');
+
+// Función autoinvocada asíncrona para usar await
+(async () => {
+    try {
+        // Llamar a deleteProduct
+        await productManager.deleteProduct(1);
+        console.log('Producto eliminado con éxito');
+    } catch (error) {
+        console.error('Error al eliminar el producto:', error.message);
+    }
+});
 
 
