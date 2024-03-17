@@ -31,3 +31,8 @@ Uso
 Inicialización: Crea una instancia de ProductManager proporcionando la ruta al archivo JSON de productos.
 Cargar Productos: Llama al método init para cargar los productos existentes.
 Gestionar Productos: Utiliza los métodos addProduct, getProducts, getProductById, updateProduct, y deleteProduct para gestionar los productos según sea necesario.
+
+# BackendDesafio3
+
+
+
